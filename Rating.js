@@ -18,11 +18,11 @@ export default function Rating({ rating }) {
 }
 
 const styles = StyleSheet.create({
-  ratingNumber: { marginRight: 4, fontFamily: 'Roboto', fontSize: 14 },
+  ratingNumber: { marginRight: 4, fontFamily: 'Roboto', fontSize: 14, color: '#000' },
   rating: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginVertical: 4
+    marginVertical: 4,
   },
 });
