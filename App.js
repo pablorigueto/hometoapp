@@ -17,7 +17,6 @@ import {
 } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import { getMovies } from './api';
-import Genres from './Genres';
 import Rating from './Rating';
 import { LinearGradient } from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
@@ -183,7 +182,7 @@ export default function App() {
                   transform: [{ translateY }],
                   //transform: 'scaleX(2) rotateX(15deg)',
                   backgroundColor: 'white',
-                  borderRadius: 34,
+                  borderRadius: 10,
                 }}
               >
                 <Image
@@ -230,14 +229,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    
   },
   posterImage: {
     width: '100%',
     height: ITEM_SIZE * 1.2,
-    // resizeMode: 'cover',
-    borderRadius: 24,
+    borderRadius: 5,
     margin: 0,
-    marginBottom: 10,
+    marginBottom: 5,
   },
 });
