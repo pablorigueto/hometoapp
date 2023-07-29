@@ -1,6 +1,6 @@
 Based on this beautiful project
 
-[Uploading Screencast from 29-07-2023 11:22:03.webm…]()
+file:///home/p1/Downloads/Screencast%20from%2029-07-2023%2011_22_03.gif
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
