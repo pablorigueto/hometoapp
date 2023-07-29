@@ -3,15 +3,15 @@ import { View, Text, StyleSheet } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 export default function Rating({ rating }) {
-  const filledStars = Math.floor(rating / 2);
-  const maxStars = Array(5 - filledStars).fill('staro');
-  const r = [...Array(filledStars).fill('star'), ...maxStars];
+ 
+  const filledStars = rating === null ? 0 : Math.min(5, Math.max(0, rating)); // Ensure rating is between 0 and 5
+  const r = Array(5).fill('staro').map((item, index) => (index < filledStars ? 'star' : 'staro'));
 
   return (
     <View style={styles.rating}>
-      <Text style={styles.ratingNumber}>{rating}</Text>
+      {/* <Text style={styles.ratingNumber}>{filledStars}</Text> */}
       {r.map((type, index) => {
-        return <AntDesign key={index} name={type} size={12} color="tomato" />;
+        return <AntDesign key={index} name={type} size={22} color="#000" />;
       })}
     </View>
   );
