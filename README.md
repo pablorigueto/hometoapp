@@ -1,6 +1,7 @@
-Based on this beautiful project
+Simple demo/template.
 
-file:///home/p1/Downloads/Screencast%20from%2029-07-2023%2011_22_03.gif
+![](https://github.com/pablorigueto/hometoapp/blob/main/demo.gif)
+
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
