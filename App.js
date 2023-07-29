@@ -168,20 +168,23 @@ export default function App() {
             extrapolate: 'clamp',
           });
 
-// When animationValue is -1, extendValue will be -100, identityValue will be 0, and clampValue will be 0.
-// When animationValue is 0.5, extendValue will be 50, identityValue will be 50, and clampValue will be 50.
-// When animationValue is 2, extendValue will be 200, identityValue will be 100, and clampValue will be 100.
+// When animationValue is -1, extendValue will be -100, 
+//  identityValue will be 0, and clampValue will be 0.
+// When animationValue is 0.5, extendValue will be 50,
+//  identityValue will be 50, and clampValue will be 50.
+// When animationValue is 2, extendValue will be 200, 
+//identityValue will be 100, and clampValue will be 100.
 
           return (
             <View style={{ width: ITEM_SIZE }}>
               <Animated.View
                 style={{
                   marginHorizontal: SPACING,
-                  padding: SPACING * 2,
+                  padding: SPACING, //border of poster image.
                   alignItems: 'center',
                   transform: [{ translateY }],
                   //transform: 'scaleX(2) rotateX(15deg)',
-                  backgroundColor: 'white',
+                  backgroundColor: 'white', //background of card.
                   borderRadius: 10,
                 }}
               >
