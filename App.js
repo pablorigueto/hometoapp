@@ -191,6 +191,7 @@ export default function App() {
                   style={styles.posterImage}
                   resizeMode="cover"
                 />
+
                 <Text style={{ fontSize: 24, color: '#272727' }} numberOfLines={1}>
                   {item.ntitle}
                 </Text>
